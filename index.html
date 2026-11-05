@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header: Flexbox is used to place the logo and navigation side by side. -->
+    <header>
+        <h1 class="logo">Rohit<span>.</span></h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="small-heading">HELLO, WELCOME TO MY PORTFOLIO</p>
+                <h2>Hi, I'm <span>Rohit Kumar</span></h2>
+                <h3>First-year B.Tech student</h3>
+                <p>
+                    I am interested in programming, AI, IoT and web development.
+                    I am learning new things and trying to improve by making small projects.
+                </p>
+                <a class="main-button" href="#projects">See My Projects</a>
+            </div>
+
+            <div class="hero-photo">
+                <img src="Rohit.jpeg" alt="Rohit Kumar">
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a first-year B.Tech student who enjoys learning about computers
+                    and electronics. I know the basics of Python, HTML and CSS. I am also
+                    exploring Arduino, Raspberry Pi and IoT. My aim is to learn by doing
+                    and build useful projects step by step.
+                </p>
+                <div class="interests">
+                    <h3>My interests</h3>
+                    <p>Programming</p>
+                    <p>Artificial Intelligence</p>
+                    <p>Internet of Things (IoT)</p>
+                    <p>Web Development</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section: Grid is used to arrange the skill cards. -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <p class="section-intro">Here are some technologies I have worked with or am currently learning.</p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Arduino</h3>
+                    <p>Learning</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Raspberry Pi</h3>
+                    <p>Exploring</p>
+                </div>
+                <div class="skill-card">
+                    <h3>IoT &amp; Electronics</h3>
+                    <p>Learning</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section: Grid displays the project cards in columns. -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <p class="section-intro">Some things I have made or am working on.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>My Bookmarks</h3>
+                    <p>A simple bookmark manager made using HTML and CSS. It helps keep useful links in one place.</p>
+                    <p class="project-tools">HTML · CSS</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal website. I made it to practise HTML, CSS, Grid and Flexbox.</p>
+                    <p class="project-tools">HTML · CSS</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python Calculator</h3>
+                    <p>A basic calculator program made while practising Python.</p>
+                    <p class="project-tools">Python</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Mine Sentinel Rover</h3>
+                    <p>An ongoing rover project idea for monitoring underground mines using a Raspberry Pi, camera and sensors.</p>
+                    <p class="project-tools">Raspberry Pi · IoT</p>
+                    <span class="project-status">In progress</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact section: Grid separates the text and form; Flexbox arranges form fields. -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-grid">
+                <div>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to connect with me or have a look at my profiles.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rohit-kumar-5b3b16430/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://github.com/The-Prodigy108" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p class="form-note">This form is a demo and is not connected to a backend yet.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rohit Kumar | Made by me</p>
+        <a href="#home">Back to top</a>
+    </footer>
+
+</body>
+</html>
